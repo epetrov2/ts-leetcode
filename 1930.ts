@@ -1,6 +1,4 @@
 function countPalindromicSubsequence(s: string): number {
-    const LETTERS = 26;
-    const A = 'a'.charCodeAt(0);
     let count = 0;
 
     let first = new Map<string, number>();
