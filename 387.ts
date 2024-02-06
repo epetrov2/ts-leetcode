@@ -10,10 +10,11 @@ function firstUniqChar(s: string): number {
         else if (second[index] === -1) second[index] = i
     }
 
-    let uniq = -1;
+    let uniq = s.length;
     for (let i = 0; i < 26; i++) {
-
+        if (second[i] === -1 && first[i] !== -1) uniq = Math.min(uniq, first[i]);
     }
+    if (uniq === s.length) uniq = -1;
 
     return uniq;
 };
