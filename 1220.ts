@@ -21,4 +21,3 @@ function countVowelPermutation(n: number): number {
 };
 
 console.log(countVowelPermutation(144));
- 

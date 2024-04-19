@@ -13,7 +13,7 @@ function longestPalindrome(s: string): string {
         }
         if (sum > maxLength) {
             maxLength = sum;
-            maxStart = l;
+            maxStart = l + 1;
         }
     }
 

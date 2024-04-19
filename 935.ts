@@ -15,12 +15,10 @@ function knightDialer(n: number): number {
         next[8] = prev[1] + prev[3];
         next[9] = prev[2] + prev[4];
         
-        for (let j = 0; j < 10; j++) prev[j] = next[j] % MOD
+        for (let j = 0; j < 10; j++) prev[j] = next[j] % MOD;
     }
     let count = (prev[0] + prev[1] + prev[2] + prev[3] + prev[4] + prev[5] + prev[6] + prev[7] + prev[8] + prev[9]) % MOD;
-        
-    console.log(next);
-    
+         
     return count;
 };
 
